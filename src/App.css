@@ -1,36 +1,100 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.title {
+  color: #fff;
+}
+
+.categories a {
+  color: orange;
+}
+
+.categories li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.categories.block,
+.categories strong {
+  color: #fff;
+}
+
+.category-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.new-category {
+  flex-flow: row wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.new-category h3 {
+  width: 100%;
+}
+
+.new-category .input,
+.edit-field {
+  width: 75%;
+  margin-bottom: 0;
+}
+
+.new-category .button,
+.edit-button {
+  width: 20%;
+}
+
+.edit-link a {
+  color: orange;
+  margin: 5px;
+}
+
+.blog-post {
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem auto;
+  color: #fff;
+}
+
+.blog-post .subtitle {
+  color: #fff;
+}
+
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  width: 100%;
+  align-self: flex-start;
+  justify-self: flex-start;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.visible {
+  color: #fff;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post-form {
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.post-form .label {
+  text-align: left;
+  margin-bottom: 2rem;
+  color:#fff;
+  font-size: 1.2rem;
+
 }
+
+.post-form .button {
+  text-align: left;
+  margin: 0;
+}
+
+
 
 .card {
   padding: 2em;
@@ -38,4 +102,23 @@
 
 .read-the-docs {
   color: #888;
+}
+
+nav {
+  margin-bottom: 3rem;
+}
+
+
+.blog-navbar {
+  color: #fff;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.blog-navbar a {
+  color: #fff
 }
